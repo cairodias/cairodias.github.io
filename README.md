@@ -1,0 +1,1 @@
+Abra index.html localmente ou publique no GitHub Pages.
