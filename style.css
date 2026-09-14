@@ -140,11 +140,10 @@ body{
 .hero-content{
     position:relative;
     z-index:5;
-
+    flex:0 0 900px;
     width:900px;
     max-width:90%;
-
-    margin:0 auto;
+    margin:0;
     text-align:center;
 }
 
@@ -812,6 +811,7 @@ body{
     }
 
     .hero-content{
+        flex:0 1 100%;
         width:100%;
         max-width:900px;
         margin:0 auto;
@@ -869,8 +869,10 @@ body{
     }
 
     .hero-content{
+        flex:0 1 100%;
         width:100%;
         max-width:100%;
+        margin:0 auto;
     }
 
     .hero h1{
@@ -917,20 +919,3 @@ body{
 
 }
 
-.hero-content{
-    position:relative;
-    z-index:5;
-    width:900px;
-    max-width:90%;
-    margin:0 auto;
-    text-align:center;
-}
-
-.hero-content .hero-buttons{
-    width:100% !important;
-    display:flex !important;
-    justify-content:center !important;
-    align-items:center !important;
-    gap:20px;
-    flex-wrap:wrap;
-}
