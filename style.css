@@ -918,9 +918,19 @@ body{
 }
 
 .hero-content{
-    width:900px !important;
-    max-width:90% !important;
-    margin-left:auto !important;
-    margin-right:auto !important;
-    text-align:center !important;
+    position:relative;
+    z-index:5;
+    width:900px;
+    max-width:90%;
+    margin:0 auto;
+    text-align:center;
+}
+
+.hero-content .hero-buttons{
+    width:100% !important;
+    display:flex !important;
+    justify-content:center !important;
+    align-items:center !important;
+    gap:20px;
+    flex-wrap:wrap;
 }
