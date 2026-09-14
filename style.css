@@ -1,882 +1,1231 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+/* =======================================================
+   O CAÇADOR RECOMENDA
+   STYLE.CSS
+   PARTE 1/4
+======================================================= */
 
-<head>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-<meta charset="UTF-8">
+html{
+    scroll-behavior:smooth;
+}
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+body{
 
-<title>Te recomendo </title>
+    font-family:'Poppins',sans-serif;
 
-<meta
-name="description"
-content="Os livros que podem transformar sua mentalidade, finanças e comunicação.">
+    background:#090909;
 
-<link
-rel="preconnect"
-href="https://fonts.googleapis.com">
+    color:#fff;
 
-<link
-rel="preconnect"
-href="https://fonts.gstatic.com"
-crossorigin>
+    overflow-x:hidden;
 
-<link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+}
 
-<link
-    rel="stylesheet"
-    href="style.css">
+/* ========================================= */
+/* CONTAINER */
+/* ========================================= */
 
-</head>
+.container{
 
-<body>
+    width:90%;
 
-<!-- ========================= -->
-<!-- MENU                      -->
-<!-- ========================= -->
+    max-width:1280px;
 
-<header class="header">
+    margin:auto;
 
-<nav class="navbar">
+}
 
-<div class="logo">
+/* ========================================= */
+/* HEADER */
+/* ========================================= */
 
-<span>O</span>
+.header{
 
-Caçador
+    position:fixed;
 
-</div>
+    top:0;
 
-<ul>
+    left:0;
 
-<li>
+    width:100%;
 
-<a href="#inicio">
+    z-index:999;
 
-Início
+    backdrop-filter:blur(12px);
 
-</a>
+    background:rgba(0,0,0,.55);
 
-</li>
+    border-bottom:1px solid rgba(255,255,255,.08);
 
-<li>
+}
 
-<a href="#livros">
+/* ========================================= */
 
-Livros
+.navbar{
 
-</a>
+    display:flex;
 
-</li>
+    justify-content:space-between;
 
-<li>
+    align-items:center;
 
-<a href="#sobre">
+    padding:20px 0;
 
-Sobre
+}
 
-</a>
+/* ========================================= */
 
-</li>
+.logo{
 
-<li>
+    font-size:32px;
 
-<a href="#faq">
+    font-weight:800;
 
-FAQ
+    color:#fff;
 
-</a>
+    cursor:pointer;
 
-</li>
+}
 
-</ul>
+.logo span{
 
-<a
-class="btn-menu"
-href="#livros">
+    color:#ff1f3d;
 
-Explorar
+}
 
-</a>
+/* ========================================= */
 
-</nav>
+.navbar ul{
 
-</header>
+    display:flex;
 
-<!-- ========================= -->
-<!-- HERO                      -->
-<!-- ========================= -->
+    gap:40px;
 
-<section
-id="inicio"
-class="hero">
+    list-style:none;
 
-<div class="hero-overlay"></div>
+}
 
-<div class="hero-content">
+.navbar a{
 
-<span class="badge">
+    text-decoration:none;
 
-★★★★★
+    color:white;
 
-Mais recomendado de 2026
+    transition:.35s;
 
-</span>
+    font-weight:500;
 
-<h1>
+}
 
-Transforme sua mente.
+.navbar a:hover{
 
-<br>
+    color:#ff1f3d;
 
-Transforme sua vida.
+}
 
-</h1>
+/* ========================================= */
 
-<p class="frase">
+.btn-menu{
 
-"Aproveite enquanto o conhecimento
+    background:#ff1f3d;
 
-ainda custa menos
+    padding:14px 28px;
 
-que a ignorância."
+    border-radius:8px;
 
-</p>
+    font-weight:700;
 
-<p class="descricao">
+    transition:.35s;
 
-Livros cuidadosamente selecionados para ajudar você
-a desenvolver uma mentalidade vencedora,
-dominar suas finanças,
-melhorar sua comunicação
-e acelerar sua evolução pessoal.
+}
 
-</p>
+.btn-menu:hover{
 
-<div class="hero-buttons">
+    transform:translateY(-3px);
 
-<a
-href="#livros"
-class="btn-red">
+    background:#ff3651;
 
-📚 Ver Livros
+}
 
-</a>
+/* ========================================= */
+/* HERO */
+/* ========================================= */
 
-<a
-href="#sobre"
-class="btn-transparent">
+.hero{
 
-Conheça o Projeto
+    min-height:100vh;
 
-</a>
+    position:relative;
 
-</div>
+    display:flex;
 
-</div>
+    align-items:center;
 
-</section>
+    overflow:hidden;
 
-<!-- ========================= -->
-<!-- INTRODUÇÃO                -->
-<!-- ========================= -->
+    background:
+    linear-gradient(
+    rgba(0,0,0,.75),
+    rgba(0,0,0,.92)
+    ),
+    url("../assets/banner/banner.jpg");
 
-<section class="intro">
+    background-size:cover;
 
-<div class="container">
+    background-position:center;
 
-<h2>
+}
 
-O conhecimento muda destinos.
+/* ========================================= */
 
-</h2>
+.hero-overlay{
 
-<p>
+    position:absolute;
 
-Não existe investimento
-com retorno maior
-do que investir
-na própria mente.
+    inset:0;
 
-Cada livro abaixo
-foi escolhido
-por seu impacto
-na forma de pensar,
-agir
-e construir resultados.
+    background:
 
-</p>
+    radial-gradient(circle at center,
 
-</div>
+    rgba(255,0,60,.18),
 
-</section>
+    transparent 60%);
 
-<!-- ========================= -->
-<!-- CATÁLOGO                  -->
-<!-- ========================= -->
+}
 
-<section
-id="livros"
-class="catalogo">
+/* ========================================= */
 
-<div class="container">
+.hero-content{
 
-<h2>
+    position:relative;
 
-Livros Recomendados
+    z-index:5;
 
-</h2>
+    max-width:700px;
 
-<p class="subtitulo">
+}
 
-Clique em qualquer livro
-para conhecer melhor.
+/* ========================================= */
 
-</p>
+.badge{
 
-<div class="cards">
+    display:inline-block;
 
-<!-- LIVRO 01 -->
+    background:#ff1f3d;
 
-<div class="card">
+    padding:8px 18px;
 
-<div class="book-tag">
+    border-radius:30px;
 
-MENTALIDADE
+    font-size:14px;
 
-</div>
+    font-weight:700;
 
-<img
-src="assets/books/habito.jpg"
-alt="Quebrando o Hábito de Ser Você Mesmo">
+    letter-spacing:1px;
 
-<div class="card-content">
+    margin-bottom:25px;
 
-<h3>
+}
 
-Quebrando o Hábito
-de Ser Você Mesmo
+/* ========================================= */
 
-</h3>
+.hero h1{
 
-<div class="stars">
+    font-size:72px;
 
-★★★★★
+    line-height:78px;
 
-</div>
+    margin-bottom:25px;
 
-<p>
+    font-weight:800;
 
-Descubra como mudar
-seus pensamentos
-para transformar
-a sua realidade.
+}
 
-</p>
+/* ========================================= */
 
-<div class="purchase-options">
+.frase{
 
-            <a href="https://amzn.to/4nqb6Nc" target="_blank" rel="noopener noreferrer" class="buy-amazon">
-                Amazon
-            </a>
+    font-size:26px;
 
-            <a href="https://meli.la/1E23P2w" target="_blank" rel="noopener noreferrer" class="buy-mercadolivre">
-                Mercado Livre
-            </a>
+    color:#fff;
 
-        </div>
+    font-style:italic;
 
-</div>
+    margin-bottom:30px;
 
-</div>
+    max-width:620px;
 
-  <!-- ========================= -->
-<!-- LIVRO 02                  -->
-<!-- ========================= -->
+}
 
-<div class="card">
+/* ========================================= */
 
-    <div class="book-tag">
+.descricao{
 
-        FINANÇAS
+    font-size:20px;
 
-    </div>
+    color:#d8d8d8;
 
-    <img
-        src="assets/books/babilonia.jpg"
-        alt="O Homem Mais Rico da Babilônia">
+    line-height:34px;
 
-    <div class="card-content">
+    margin-bottom:40px;
 
-        <h3>
+}
 
-            O Homem Mais Rico
-            da Babilônia
+/* ========================================= */
 
-        </h3>
+.hero-buttons{
 
-        <div class="stars">
+    display:flex;
 
-            ★★★★★
+    gap:20px;
 
-        </div>
+    flex-wrap:wrap;
 
-        <p>
+}
 
-            Aprenda princípios financeiros
-            que permanecem atuais
-            há milhares de anos.
+/* ========================================= */
 
-        </p>
+.btn-red{
 
-        <div class="purchase-options">
+    display:inline-flex;
 
-            <a href="https://amzn.to/48AQpt9" target="_blank" rel="noopener noreferrer" class="buy-amazon">
-                Amazon
-            </a>
+    align-items:center;
 
-            <a href="https://meli.la/1igA8t8" target="_blank" rel="noopener noreferrer" class="buy-mercadolivre">
-                Mercado Livre
-            </a>
+    justify-content:center;
 
-        </div>
+    background:#ff1f3d;
 
-    </div>
+    color:white;
 
-</div>
+    text-decoration:none;
 
-<!-- ========================= -->
-<!-- LIVRO 03                  -->
-<!-- ========================= -->
+    padding:18px 36px;
 
-<div class="card">
+    border-radius:10px;
 
-    <div class="book-tag">
+    font-weight:700;
 
-        SUCESSO
+    transition:.35s;
 
-    </div>
+}
 
-    <img
-        src="assets/books/vendedor.jpg"
-        alt="O Maior Vendedor do Mundo">
+.btn-red:hover{
 
-    <div class="card-content">
+    transform:translateY(-4px);
 
-        <h3>
+    box-shadow:0 18px 45px rgba(255,31,61,.35);
 
-            O Maior Vendedor
-            do Mundo
+}
 
-        </h3>
+/* ========================================= */
 
-        <div class="stars">
+.btn-transparent{
 
-            ★★★★★
+    display:inline-flex;
 
-        </div>
+    align-items:center;
 
-        <p>
+    justify-content:center;
 
-            Uma leitura inspiradora
-            sobre disciplina,
-            persistência
-            e propósito.
+    border:2px solid rgba(255,255,255,.25);
 
-        </p>
+    color:white;
 
-        <div class="purchase-options">
+    text-decoration:none;
 
-            <a href="https://amzn.to/466fHxW" target="_blank" rel="noopener noreferrer" class="buy-amazon">
-                Amazon
-            </a>
+    padding:18px 34px;
 
-            <a href="https://meli.la/2BPK5Kc" target="_blank" rel="noopener noreferrer" class="buy-mercadolivre">
-                Mercado Livre
-            </a>
+    border-radius:10px;
 
-        </div>
+    transition:.35s;
 
-    </div>
+}
 
-</div>
+.btn-transparent:hover{
 
-<!-- ========================= -->
-<!-- LIVRO 04                  -->
-<!-- ========================= -->
+    background:white;
 
-<div class="card">
+    color:#111;
 
-    <div class="book-tag">
+}
 
-        COMUNICAÇÃO
+/* =======================================================
+   CATÁLOGO DE LIVROS
+======================================================= */
 
-    </div>
+.catalogo{
 
-    <img
-        src="assets/books/90segundos.jpg"
-        alt="Como Convencer Alguém em 90 Segundos">
+    padding:120px 0;
 
-    <div class="card-content">
+}
 
-        <h3>
+.catalogo h2{
 
-            Como Convencer
-            Alguém em
-            90 Segundos
+    font-size:46px;
 
-        </h3>
+    text-align:center;
 
-        <div class="stars">
+    margin-bottom:15px;
 
-            ★★★★★
+    font-weight:800;
 
-        </div>
+}
 
-        <p>
+.subtitulo{
 
-            Aprenda técnicas
-            para criar conexão
-            e causar uma excelente
-            primeira impressão.
+    text-align:center;
 
-        </p>
+    color:#bcbcbc;
 
-        <div class="purchase-options">
+    margin-bottom:60px;
 
-            <a href="https://amzn.to/3YsHrZ7" target="_blank" rel="noopener noreferrer" class="buy-amazon">
-                Amazon
-            </a>
+    font-size:18px;
 
-            <a href="https://meli.la/1gna3oc" target="_blank" rel="noopener noreferrer" class="buy-mercadolivre">
-                Mercado Livre
-            </a>
+}
 
-        </div>
+/* GRID */
 
-    </div>
+.cards{
 
-</div>
+    display:grid;
 
-</div>
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 
-</div>
+    gap:35px;
 
-</section>
+}
 
-<!-- ========================= -->
-<!-- FRASE                     -->
-<!-- ========================= -->
+/* CARD */
 
-<section id="sobre" class="quote">
+.card{
 
-    <div class="container">
+    position:relative;
 
-        <span class="quote-icon">
+    overflow:hidden;
 
-            ❝
+    border-radius:18px;
 
-        </span>
+    background:#171717;
 
-        <h2>
+    transition:.45s;
 
-            Aproveite enquanto o conhecimento
-            ainda custa menos
-            que a ignorância.
+    box-shadow:0 10px 35px rgba(0,0,0,.45);
 
-        </h2>
+}
 
-        <p>
+.card:hover{
 
-            Todos os livros desta página foram escolhidos
-            porque têm potencial para transformar a maneira
-            como você pensa, toma decisões e constrói o seu futuro.
+    transform:translateY(-10px);
 
-        </p>
+    box-shadow:0 25px 60px rgba(255,31,61,.28);
 
-    </div>
+}
 
-</section>
+/* CAPA */
 
-<!-- ========================= -->
-<!-- BENEFÍCIOS                -->
-<!-- ========================= -->
+.card img{
 
-<section class="beneficios">
+    width:100%;
 
-    <div class="container">
+    height:420px;
 
-        <h2>
+    object-fit:cover;
 
-            O que você vai desenvolver
+    transition:.45s;
 
-        </h2>
+}
 
-        <div class="beneficios-grid">
+.card:hover img{
 
-            <div class="beneficio">
+    transform:scale(1.06);
 
-                🧠
+}
 
-                <h3>Mentalidade</h3>
+/* ETIQUETA */
 
-                <p>
-                    Desenvolva disciplina,
-                    foco e inteligência emocional.
-                </p>
+.book-tag{
 
-            </div>
+    position:absolute;
 
-            <div class="beneficio">
+    top:18px;
 
-                💰
+    left:18px;
 
-                <h3>Finanças</h3>
+    background:#ff1f3d;
 
-                <p>
-                    Aprenda princípios que ajudam
-                    a construir riqueza ao longo da vida.
-                </p>
+    color:white;
 
-            </div>
+    padding:8px 14px;
 
-            <div class="beneficio">
+    border-radius:40px;
 
-                🗣️
+    font-size:12px;
 
-                <h3>Comunicação</h3>
+    font-weight:700;
 
-                <p>
-                    Conquiste pessoas,
-                    negocie melhor
-                    e aumente sua influência.
-                </p>
+    letter-spacing:1px;
 
-            </div>
+    z-index:10;
 
-            <div class="beneficio">
+}
 
-                🚀
+/* CONTEÚDO */
 
-                <h3>Evolução</h3>
+.card-content{
 
-                <p>
-                    Pequenas mudanças de hoje
-                    podem gerar grandes resultados
-                    amanhã.
-                </p>
+    padding:25px;
 
-            </div>
+}
 
-        </div>
+.card-content h3{
 
-    </div>
+    font-size:24px;
 
-</section>
+    margin-bottom:15px;
 
-  <!-- ========================= -->
-<!-- POR QUE CRIEI             -->
-<!-- ========================= -->
+    line-height:32px;
 
-<section class="sobre-site">
+}
 
-    <div class="container">
+.card-content p{
 
-        <div class="sobre-texto">
+    color:#c8c8c8;
 
-            <span class="mini-titulo">
+    line-height:28px;
 
-                SOBRE O PROJETO
+    margin-bottom:25px;
 
-            </span>
+}
 
-            <h2>
+/* ESTRELAS */
 
-                Por que nasceu o
-                O Caçador Recomenda?
+.stars{
 
-            </h2>
+    color:#FFD54A;
 
-            <p>
+    font-size:20px;
 
-                Sempre acreditei que um único livro pode mudar
-                completamente a direção da vida de uma pessoa.
+    margin-bottom:18px;
 
-            </p>
+}
 
-            <p>
+/* BOTÃO */
 
-                Criei este projeto para reunir livros que realmente
-                agregam valor e que tiveram impacto na minha forma
-                de pensar sobre dinheiro, disciplina, comunicação
-                e crescimento pessoal.
+.card-content a{
 
-            </p>
+    display:block;
 
-            <p>
+    text-align:center;
 
-                Meu objetivo é economizar seu tempo,
-                mostrando apenas obras que realmente
-                valem a pena.
+    background:#ff1f3d;
 
-            </p>
+    color:white;
 
-        </div>
+    text-decoration:none;
 
-    </div>
+    padding:15px;
 
-</section>
+    border-radius:10px;
 
-<!-- ========================= -->
-<!-- DEPOIMENTOS               -->
-<!-- ========================= -->
+    font-weight:700;
 
-<section class="depoimentos">
+    transition:.35s;
 
-    <div class="container">
+}
 
-        <h2>
+.card-content a:hover{
 
-            O conhecimento muda pessoas.
+    background:#ff3651;
 
-        </h2>
+}
 
-        <div class="depoimentos-grid">
+/* =======================================================
+   FRASE
+======================================================= */
 
-            <div class="depoimento">
+.quote{
 
-                <div class="aspas">
+    padding:120px 0;
 
-                    ❝
+    text-align:center;
 
-                </div>
+}
 
-                <p>
+.quote-icon{
 
-                    Um bom livro pode ensinar em poucos dias
-                    aquilo que alguém levou décadas para aprender.
+    font-size:70px;
 
-                </p>
+    color:#ff1f3d;
 
-            </div>
+}
 
-            <div class="depoimento">
+.quote h2{
 
-                <div class="aspas">
+    max-width:850px;
 
-                    ❝
+    margin:20px auto;
 
-                </div>
+    font-size:44px;
 
-                <p>
+    line-height:58px;
 
-                    O conhecimento não transforma apenas sua mente.
-                    Ele transforma suas decisões.
+    font-weight:800;
 
-                </p>
+}
 
-            </div>
+.quote p{
 
-            <div class="depoimento">
+    max-width:800px;
 
-                <div class="aspas">
+    margin:auto;
 
-                    ❝
+    color:#bcbcbc;
 
-                </div>
+    line-height:34px;
 
-                <p>
+    font-size:19px;
 
-                    Quanto mais você aprende,
-                    menos depende da sorte.
+}
 
-                </p>
+/* =======================================================
+   BENEFÍCIOS
+======================================================= */
 
-            </div>
+.beneficios{
 
-        </div>
+    padding:120px 0;
 
-    </div>
+}
 
-</section>
+.beneficios h2{
 
-<!-- ========================= -->
-<!-- FAQ                       -->
-<!-- ========================= -->
+    text-align:center;
 
-<section id="faq" class="faq">
+    font-size:42px;
 
-    <div class="container">
+    margin-bottom:60px;
 
-        <h2>
+}
 
-            Perguntas Frequentes
+.beneficios-grid{
 
-        </h2>
+    display:grid;
 
-        <div class="faq-item">
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 
-            <h3>
+    gap:30px;
 
-                Os links são seguros?
+}
 
-            </h3>
+.beneficio{
 
-            <p>
+    background:#151515;
 
-                Sim.
-                Todos os botões direcionam para a Amazon.
+    padding:40px;
 
-            </p>
+    border-radius:16px;
 
-        </div>
+    transition:.35s;
 
-        <div class="faq-item">
+    text-align:center;
 
-            <h3>
+}
 
-                Os livros são físicos ou digitais?
+.beneficio:hover{
 
-            </h3>
+    transform:translateY(-8px);
 
-            <p>
+    background:#1d1d1d;
 
-                Depende da opção disponível na Amazon.
-                Você poderá escolher durante a compra.
+}
 
-            </p>
+.beneficio h3{
 
-        </div>
+    margin:20px 0;
 
-        <div class="faq-item">
+    font-size:24px;
 
-            <h3>
+}
 
-                Você realmente recomenda esses livros?
+.beneficio p{
 
-            </h3>
+    color:#c8c8c8;
 
-            <p>
+    line-height:30px;
 
-                Sim.
+}
 
-                Todos foram escolhidos por seu impacto
-                em áreas como mentalidade,
-                finanças,
-                comunicação
-                e desenvolvimento pessoal.
+/* =======================================================
+   SOBRE O PROJETO
+======================================================= */
 
-            </p>
+.sobre-site{
 
-        </div>
+    padding:140px 0;
 
-    </div>
+}
 
-</section>
+.sobre-texto{
 
-<!-- ========================= -->
-<!-- CHAMADA FINAL             -->
-<!-- ========================= -->
+    max-width:900px;
 
-<section class="cta-final">
+    margin:auto;
 
-    <div class="container">
+    text-align:center;
 
-        <h2>
+}
 
-            O melhor investimento continua sendo você.
+.mini-titulo{
 
-        </h2>
+    color:#ff1f3d;
 
-        <p>
+    font-weight:700;
 
-            Aproveite enquanto o conhecimento
-            ainda custa menos
-            que a ignorância.
+    letter-spacing:3px;
 
-        </p>
+    font-size:13px;
 
-        <a
-            href="#livros"
-            class="btn-red">
+}
 
-            Escolher meu próximo livro
+.sobre-texto h2{
 
-        </a>
+    font-size:52px;
 
-    </div>
+    margin:25px 0 35px;
 
-</section>
+    line-height:64px;
 
-  <!-- ========================= -->
-<!-- RODAPÉ                    -->
-<!-- ========================= -->
+}
 
-<footer class="footer">
+.sobre-texto p{
 
-    <div class="container">
+    color:#cfcfcf;
 
-        <h2>
+    font-size:20px;
 
-            O CAÇADOR RECOMENDA
+    line-height:38px;
 
-        </h2>
+    margin-bottom:25px;
 
-        <p>
+}
 
-            Livros escolhidos para ajudar você
-            a evoluir em mentalidade,
-            finanças,
-            comunicação
-            e desenvolvimento pessoal.
+/* =======================================================
+   DEPOIMENTOS
+======================================================= */
 
-        </p>
+.depoimentos{
 
-        <div class="footer-links">
+    padding:130px 0;
 
-            <a href="#inicio">
+    background:#101010;
 
-                Início
+}
 
-            </a>
+.depoimentos h2{
 
-            <a href="#livros">
+    text-align:center;
 
-                Livros
+    font-size:46px;
 
-            </a>
+    margin-bottom:70px;
 
-            <a href="#sobre">
+}
 
-                Sobre
+.depoimentos-grid{
 
-            </a>
+    display:grid;
 
-            <a href="#faq">
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 
-                FAQ
+    gap:35px;
 
-            </a>
+}
 
-        </div>
+.depoimento{
 
-        <div class="copyright">
+    background:#181818;
 
-            © 2026 O Caçador Recomenda.
-            Todos os direitos reservados.
+    padding:35px;
 
-        </div>
+    border-radius:18px;
 
-    </div>
+    transition:.35s;
 
-</footer>
+}
 
-<script src="js/app.js"></script>
+.depoimento:hover{
 
-</body>
+    transform:translateY(-8px);
 
-</html>
+    box-shadow:0 18px 40px rgba(255,31,61,.15);
+
+}
+
+.aspas{
+
+    font-size:55px;
+
+    color:#ff1f3d;
+
+    margin-bottom:20px;
+
+}
+
+.depoimento p{
+
+    color:#d0d0d0;
+
+    line-height:32px;
+
+}
+
+/* =======================================================
+   FAQ
+======================================================= */
+
+.faq{
+
+    padding:130px 0;
+
+}
+
+.faq h2{
+
+    text-align:center;
+
+    font-size:46px;
+
+    margin-bottom:60px;
+
+}
+
+.faq-item{
+
+    background:#171717;
+
+    border-radius:14px;
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+    transition:.35s;
+
+}
+
+.faq-item:hover{
+
+    background:#1f1f1f;
+
+}
+
+.faq-item h3{
+
+    margin-bottom:15px;
+
+    color:#fff;
+
+}
+
+.faq-item p{
+
+    color:#cfcfcf;
+
+    line-height:30px;
+
+}
+
+/* =======================================================
+   CTA FINAL
+======================================================= */
+
+.cta-final{
+
+    padding:140px 0;
+
+    text-align:center;
+
+}
+
+.cta-final h2{
+
+    font-size:54px;
+
+    margin-bottom:25px;
+
+}
+
+.cta-final p{
+
+    max-width:700px;
+
+    margin:0 auto 40px;
+
+    color:#cfcfcf;
+
+    line-height:34px;
+
+    font-size:20px;
+
+}
+
+/* =======================================================
+   FOOTER
+======================================================= */
+
+.footer{
+
+    background:#050505;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding:80px 0;
+
+}
+
+.footer h2{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+    font-size:34px;
+
+}
+
+.footer p{
+
+    text-align:center;
+
+    max-width:650px;
+
+    margin:0 auto 35px;
+
+    color:#9d9d9d;
+
+    line-height:30px;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:40px;
+
+}
+
+.footer-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#ff1f3d;
+
+}
+
+.copyright{
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+/* =======================================================
+   RESPONSIVIDADE
+======================================================= */
+
+@media (max-width:1100px){
+
+    .hero h1{
+        font-size:58px;
+        line-height:64px;
+    }
+
+    .frase{
+        font-size:22px;
+    }
+
+}
+
+@media (max-width:900px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+    .navbar ul{
+
+        gap:20px;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+    .hero{
+
+        padding:120px 25px 70px;
+
+        text-align:center;
+
+    }
+
+    .hero-content{
+
+        margin:auto;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero h1{
+
+        font-size:46px;
+
+        line-height:54px;
+
+    }
+
+    .descricao{
+
+        font-size:18px;
+
+    }
+
+    .catalogo h2,
+    .quote h2,
+    .beneficios h2,
+    .sobre-texto h2,
+    .depoimentos h2,
+    .faq h2,
+    .cta-final h2{
+
+        font-size:36px;
+        line-height:46px;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .container{
+
+        width:92%;
+
+    }
+
+    .hero{
+
+        min-height:auto;
+
+        padding-top:150px;
+
+        padding-bottom:90px;
+
+    }
+
+    .hero h1{
+
+        font-size:34px;
+
+        line-height:42px;
+
+    }
+
+    .frase{
+
+        font-size:20px;
+
+    }
+
+    .descricao{
+
+        font-size:17px;
+
+        line-height:30px;
+
+    }
+
+    .btn-red,
+    .btn-transparent{
+
+        width:100%;
+
+    }
+
+    .cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .card img{
+
+        height:380px;
+
+    }
+
+    .footer-links{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+}
+
+/* =======================================================
+   PEQUENAS ANIMAÇÕES
+======================================================= */
+
+.card,
+.beneficio,
+.depoimento,
+.faq-item{
+
+    animation:fadeUp .7s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+::selection{
+
+    background:#ff1f3d;
+
+    color:white;
+
+}
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0c0c0c;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#ff1f3d;
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#ff3b56;
+
+}
+
+body{
+    background:red !important;
+}
+
+
+/* =======================================================
+   OPÇÕES DE COMPRA — AMAZON + MERCADO LIVRE
+======================================================= */
+
+.purchase-options{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    margin-top:5px;
+}
+
+.purchase-options a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:50px;
+    padding:13px 10px;
+    border-radius:10px;
+    font-weight:700;
+    font-size:14px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.purchase-options .buy-amazon{
+    background:#ff1f3d;
+    color:#fff;
+}
+
+.purchase-options .buy-amazon:hover{
+    background:#ff3651;
+    transform:translateY(-2px);
+}
+
+.purchase-options .buy-mercadolivre{
+    background:#ffd400;
+    color:#111;
+}
+
+.purchase-options .buy-mercadolivre:hover{
+    background:#ffe04a;
+    transform:translateY(-2px);
+}
+
+@media(max-width:600px){
+    .purchase-options{
+        grid-template-columns:1fr;
+    }
+}
