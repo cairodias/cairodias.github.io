@@ -204,12 +204,14 @@ body{
 /* ========================================= */
 
 .hero-content{
-    position:relative;
+    position:absolute;
     z-index:5;
     width:900px;
     max-width:90%;
     text-align:center;
-    margin:0 auto;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
 }
 
 /* ========================================= */
