@@ -916,3 +916,11 @@ body{
     }
 
 }
+
+.hero-content{
+    width:900px !important;
+    max-width:90% !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    text-align:center !important;
+}
