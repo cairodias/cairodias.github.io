@@ -421,7 +421,7 @@ body{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:10px;
-    margin-top:5px;
+    margin-top:auto;
 }
 
 .purchase-options a{
