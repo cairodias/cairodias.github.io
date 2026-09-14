@@ -1178,3 +1178,52 @@ body{
 body{
     background:red !important;
 }
+
+
+/* BOTÕES DE COMPRA - AMAZON + MERCADO LIVRE */
+
+.purchase-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.purchase-options a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    padding: 13px 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.purchase-options .buy-amazon {
+    background: #ff1f3d;
+    color: #fff;
+}
+
+.purchase-options .buy-amazon:hover {
+    background: #ff3651;
+    transform: translateY(-2px);
+}
+
+.purchase-options .buy-mercadolivre {
+    background: #ffd400;
+    color: #111;
+}
+
+.purchase-options .buy-mercadolivre:hover {
+    background: #ffe04a;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .purchase-options {
+        grid-template-columns: 1fr;
+    }
+}
