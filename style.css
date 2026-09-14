@@ -1237,11 +1237,11 @@ body{
 }
 
 
-.hero-buttons{
-    width:100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.hero-content .hero-buttons{
+    width:100% !important;
+    display:flex !important;
+    justify-content:center !important;
+    align-items:center !important;
     gap:20px;
     flex-wrap:wrap;
 }
