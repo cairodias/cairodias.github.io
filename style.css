@@ -203,15 +203,13 @@ body{
 
 /* ========================================= */
 
-.hero-content{
-    position:absolute;
-    z-index:5;
-    width:900px;
-    max-width:90%;
-    text-align:center;
-    left:50%;
-    top:50%;
-    transform:translate(-50%,-50%);
+.hero-content .hero-buttons{
+    width:100% !important;
+    display:flex !important;
+    justify-content:center !important;
+    align-items:center !important;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
 /* ========================================= */
