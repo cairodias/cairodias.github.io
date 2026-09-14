@@ -1245,3 +1245,7 @@ body{
     gap:20px;
     flex-wrap:wrap;
 }
+
+.intro{
+    background:#000 !important;
+}
