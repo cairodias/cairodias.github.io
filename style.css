@@ -1235,3 +1235,13 @@ body{
         grid-template-columns:1fr;
     }
 }
+
+
+.hero-buttons{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
