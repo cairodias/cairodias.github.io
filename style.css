@@ -940,3 +940,282 @@ body{
 
 }
 
+
+/* =========================================================
+   CAÇADOR RECOMENDA — ESTRATÉGIA & REFLEXÃO
+========================================================= */
+
+.estrategia-section{
+    max-width:1200px;
+    margin:100px auto;
+    padding:0 25px;
+}
+
+.estrategia-header{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.estrategia-tag{
+    display:inline-block;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:3px;
+    color:#aaa;
+    margin-bottom:12px;
+}
+
+.estrategia-header h2{
+    margin:0;
+    font-size:42px;
+    font-weight:800;
+    color:#fff;
+}
+
+.estrategia-header h2 span{
+    color:#b00000;
+}
+
+.estrategia-header p{
+    max-width:680px;
+    margin:15px auto 0;
+    color:#999;
+    line-height:1.7;
+    font-size:16px;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.estrategia-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.produto-especial{
+    position:relative;
+    overflow:hidden;
+    border-radius:20px;
+    background:#151515;
+    border:1px solid rgba(255,255,255,.07);
+    box-shadow:0 15px 45px rgba(0,0,0,.35);
+    transition:.4s ease;
+}
+
+.produto-especial:hover{
+    transform:translateY(-7px);
+    border-color:rgba(255,255,255,.16);
+    box-shadow:0 25px 60px rgba(0,0,0,.5);
+}
+
+
+/* =========================================================
+   IMAGEM
+========================================================= */
+
+.produto-imagem{
+    height:350px;
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#0d0d0d;
+}
+
+.produto-imagem img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    transition:.5s ease;
+}
+
+.produto-especial:hover .produto-imagem img{
+    transform:scale(1.04);
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.produto-badge{
+    position:absolute;
+    top:18px;
+    left:18px;
+    z-index:3;
+
+    padding:8px 13px;
+
+    background:rgba(0,0,0,.78);
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:50px;
+
+    color:#fff;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:1px;
+
+    backdrop-filter:blur(8px);
+}
+
+
+/* =========================================================
+   CONTEÚDO
+========================================================= */
+
+.produto-conteudo{
+    padding:30px;
+}
+
+.produto-categoria{
+    font-size:11px;
+    letter-spacing:2px;
+    font-weight:700;
+    color:#999;
+}
+
+.produto-conteudo h3{
+    margin:8px 0 5px;
+    font-size:30px;
+    color:#fff;
+}
+
+.produto-frase{
+    color:#ddd;
+    font-size:17px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.produto-conteudo > p:not(.produto-frase){
+    color:#999;
+    font-size:14px;
+    line-height:1.7;
+}
+
+
+/* =========================================================
+   BENEFÍCIOS
+========================================================= */
+
+.produto-beneficios{
+    display:flex;
+    gap:10px;
+    margin:25px 0;
+    flex-wrap:wrap;
+}
+
+.produto-beneficios div{
+    padding:9px 12px;
+    background:#1d1d1d;
+    border-radius:8px;
+
+    color:#ccc;
+    font-size:12px;
+}
+
+.produto-beneficios span{
+    margin-right:5px;
+}
+
+
+/* =========================================================
+   BOTÕES
+========================================================= */
+
+.produto-acoes{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.produto-acoes a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    min-height:48px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    font-size:14px;
+    font-weight:700;
+
+    transition:.3s ease;
+}
+
+
+/* AMAZON */
+
+.btn-amazon{
+    background:#fff;
+    color:#111;
+}
+
+.btn-amazon:hover{
+    transform:translateY(-2px);
+    background:#e8e8e8;
+}
+
+
+/* MERCADO LIVRE */
+
+.btn-mercado{
+    background:#ffe600;
+    color:#222;
+}
+
+.btn-mercado:hover{
+    transform:translateY(-2px);
+    filter:brightness(.94);
+}
+
+
+/* =========================================================
+   CELULAR
+========================================================= */
+
+@media(max-width:850px){
+
+    .estrategia-grid{
+        grid-template-columns:1fr;
+    }
+
+    .estrategia-header h2{
+        font-size:34px;
+    }
+
+}
+
+@media(max-width:500px){
+
+    .estrategia-section{
+        margin:70px auto;
+        padding:0 15px;
+    }
+
+    .produto-imagem{
+        height:280px;
+    }
+
+    .produto-conteudo{
+        padding:22px;
+    }
+
+    .produto-conteudo h3{
+        font-size:26px;
+    }
+
+}
