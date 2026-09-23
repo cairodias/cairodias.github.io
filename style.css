@@ -1221,20 +1221,19 @@ body{
 
 }
 
-/* CENTRALIZAR MENU */
 .navbar {
-    width: 100%;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+    position: relative !important;
+    width: 100% !important;
 }
 
-.navbar ul {
+.navbar > ul {
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
     display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 40px;
+    gap: 40px !important;
     margin: 0 !important;
     padding: 0 !important;
-    list-style: none;
+    list-style: none !important;
+    white-space: nowrap !important;
 }
