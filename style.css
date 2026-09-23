@@ -1245,3 +1245,16 @@ body{
     list-style: none !important;
     white-space: nowrap !important;
 }
+
+
+/* ALTURA DO MENU SUPERIOR */
+.header{
+    height:90px !important;
+}
+
+.navbar{
+    height:90px !important;
+    min-height:90px !important;
+    padding:0 !important;
+    box-sizing:border-box;
+}
