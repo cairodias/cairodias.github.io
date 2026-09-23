@@ -460,12 +460,12 @@ body{
 }
 
 .purchase-options .buy-amazon{
-    background:#146EB4;
+    background:#146EB4 !important;
     color:#fff;
 }
 
 .purchase-options .buy-amazon:hover{
-    background:#ff3651;
+    background:#1b7fc9 !important;
     transform:translateY(-2px);
 }
 
