@@ -1220,3 +1220,22 @@ body{
     }
 
 }
+
+/* CENTRALIZAR MENU SUPERIOR */
+
+.navbar{
+    display:flex !important;
+    justify-content:center !important;
+    align-items:center !important;
+    width:100% !important;
+}
+
+.navbar ul{
+    display:flex !important;
+    justify-content:center !important;
+    align-items:center !important;
+    gap:40px;
+    margin:0 auto !important;
+    padding:0 !important;
+    list-style:none;
+}
