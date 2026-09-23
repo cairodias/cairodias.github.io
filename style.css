@@ -1014,7 +1014,7 @@ body{
 .produto-especial:hover{
     transform:translateY(-7px);
     border-color:rgba(255,255,255,.16);
-    box-shadow:0 25px 60px rgba(0,0,0,.5);
+    box-shadow:0 25px 60px rgba(255,31,61,.28);
 }
 
 
