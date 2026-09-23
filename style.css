@@ -1221,21 +1221,20 @@ body{
 
 }
 
-/* CENTRALIZAR MENU SUPERIOR */
-
-.navbar{
-    display:flex !important;
-    justify-content:center !important;
-    align-items:center !important;
-    width:100% !important;
+/* CENTRALIZAR MENU */
+.navbar {
+    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
-.navbar ul{
-    display:flex !important;
-    justify-content:center !important;
-    align-items:center !important;
-    gap:40px;
-    margin:0 auto !important;
-    padding:0 !important;
-    list-style:none;
+.navbar ul {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 40px;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
 }
