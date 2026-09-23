@@ -1161,13 +1161,13 @@ body{
 /* AMAZON */
 
 .btn-amazon{
-    background:#fff;
-    color:#111;
+    background:#146EB4 !important;
+    color:#fff;
 }
 
 .btn-amazon:hover{
     transform:translateY(-2px);
-    background:#e8e8e8;
+    background:#1b7fc9 !important;
 }
 
 
