@@ -460,7 +460,7 @@ body{
 }
 
 .purchase-options .buy-amazon{
-    background:#ff1f3d;
+    background:#146EB4;
     color:#fff;
 }
 
@@ -922,7 +922,8 @@ body{
     }
 
     .purchase-options{
-        grid-template-columns:1fr;
+    grid-template-columns:1fr 1fr;
+    
     }
 
     .cards{
