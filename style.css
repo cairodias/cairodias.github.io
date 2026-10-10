@@ -1258,3 +1258,7 @@ body{
     padding:0 !important;
     box-sizing:border-box;
 }
+
+.sobre-texto h2 {
+    margin-bottom: 50px;
+}
